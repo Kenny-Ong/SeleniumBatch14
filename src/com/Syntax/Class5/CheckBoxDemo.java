@@ -1,6 +1,8 @@
 package com.Syntax.Class5;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CheckBoxDemo {
@@ -12,6 +14,10 @@ public class CheckBoxDemo {
         driver.get("http://syntaxprojects.com/basic-checkbox-demo.php");
 //Maximize window
         driver.manage().window().maximize();
-
+//find the checkbox
+        WebElement checkbox = driver.findElement(By.id("isAgeSelected"));
+//click on it
+        checkbox.click();
+//
     }
 }
